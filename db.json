@@ -1,0 +1,20 @@
+{
+  "product": [
+    {
+      "img": "",
+      "name": "X12 Plus",
+      "price": "$900.00",
+      "Description": "balón Gaser",
+      "category": "balones",
+      "id": 1
+    },
+    {
+      "img": "h",
+      "category": "uniformes",
+      "name": "Control Xbox One",
+      "price": "$950.00",
+      "description": "",
+      "id": 515151
+    }
+  ]
+}
