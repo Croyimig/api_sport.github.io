@@ -1,0 +1,221 @@
+
+
+.hero{
+    display: flex;
+    height: 100dvh;
+    padding: 49px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+
+
+
+.hero__container{
+    display: flex;
+    width: 90%;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.hero__container h1{
+    color: var(--preto-branco, #FFF);
+    font-family: Raleway;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.hero__container h2{
+    color: var(--preto-branco, #FFF);
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero__boton{
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--verde-100, #649e43);
+    color: var(--preto-blanco);
+    border: none;    
+}
+
+
+.banner_span1 {
+    background:linear-gradient(58deg, rgba(0, 0, 0, 0.781) 10%, rgba(0, 0, 0, 0.792) 17%, rgba(0, 0, 0, 0.542) 60%), 
+    url("https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/primary/q3ungj5petgsfitsuvbr");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner_span2 {
+    background: linear-gradient(58deg, rgba(0, 0, 0, 0.806) 10%, rgba(0, 0, 0, 0.792) 17%, rgba(0, 0, 0, 0.436) 50%), 
+    url("https://i.pinimg.com/originals/ce/5e/17/ce5e175a7525d5bf44ebe5a52f6538c1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner_span3 {
+    background:linear-gradient(58deg, rgba(0, 0, 0, 0.814) 10%, rgba(0, 0, 0, 0.792) 17%, rgba(0, 0, 0, 0.421) 60%), 
+    url("https://media.istockphoto.com/id/1136317339/es/foto/equipamiento-deportivo-en-planta.jpg?s=612x612&w=0&k=20&c=bU1BStza0D3hoaYTMSq0RFZP8Ut4dtLPsAFkGWrTxVs=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner_span4 {
+    background:linear-gradient(58deg, rgba(0, 0, 0, 0.781) 10%, rgba(0, 0, 0, 0.792) 17%, rgba(0, 0, 0, 0.514) 60%), 
+    url("https://www.cmdsport.com/app/uploads/2023/03/botas-futbol-lo-mas-buscado-en-internet-en-marzo-2023-2-bis.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner__nav-content {
+    width: calc(200px + 2.4em);
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 1.2em;
+    position: absolute;
+    margin-top: 2rem;
+    right: 1em
+}
+
+    
+
+.banner_nav {
+    background: #FFFFFF;
+    height: 5px;
+    width: 60px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .3s ease-in-out
+}
+
+.banner_nav--select {
+    background: #649e43;
+}
+
+
+
+
+@media screen and (max-width:1024px){
+    .hero{
+        display: flex;
+        height: 453px;
+        padding: 32px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 16px;
+    }
+    .hero__container h1{
+        font-size: 52px;
+        line-height: normal;
+    }
+    .hero__container h2{
+        font-size: 22px;
+    }
+    .hero__btn__link{
+        padding: 12px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .banner__ofertas{
+        font-size: 1.2rem; 
+        }  
+    .banner__nav-content {
+        width: calc(200px + 2.4em);
+        /* right: 50%; */
+        /* left: 50%; */
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 1.2em;
+        position: absolute;
+        bottom: 42em;
+        right: 25em;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .hero{
+        display: flex;
+        height: 59rem;
+        gap: unset;
+      }
+      .hero__container{
+        justify-content: flex-end;
+        align-self: stretch;
+      }
+      .hero__container h1{
+        font-size: 2.2rem;
+        margin: 3px 0;
+      }
+      .hero__container h2{
+        font-size: 1.4rem;
+      }
+      .hero__boton{
+        padding: 1.2rem 1.6rem;
+        gap: 1rem;
+      }
+      .banner__nav-content {
+        width: calc(140px + 2.4em);
+        transform: none;
+        left: auto;
+        top: 92%;
+    }
+
+    .banner_nav {
+        height: 3px;
+        width: 35px;
+    }
+    .banner_span1, .banner_span2, .banner_span3, .banner_span4{
+        background-size:cover;
+        background-position:  bottom center;
+    }
+    .banner__nav-content {
+        /* display: none; */
+        width: calc(140px + 2.4em);
+        transform: none;
+        left: auto;
+        top: 55rem;
+        right: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

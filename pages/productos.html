@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Todos los productos </title>
+        <!-- Iconos -->
+        <link rel="shortcut icon" href="../assets/imagenes/futbol__balon.ico" type="image/x-icon">
+        <!-- Fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+        <!-- CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+        <!-- Estilos complementarios css -->
+        <link rel="stylesheet" href="../assets/estilos/base/root.css">
+        <link rel="stylesheet" href="../assets/estilos/base/header.css">
+        <link rel="stylesheet" href="../assets/estilos/base/dark-mode.css">
+        <link rel="stylesheet" href="../assets/estilos/base/footer.css">
+        <link rel="stylesheet" href="../assets/estilos/productos-all/all-products.css">
+    </head>
+<body>
+    <header class="header">
+            <!-- Busqueda -->
+            <div class="header__container">
+                <div class="header__logo-busqueda">
+                    <div class="logo">
+                        <a href="../index.html" class="header__logo__link">
+                            <img src="../assets/imagenes/logo_random.png" alt="logo Random" class="header__logo">
+                        </a>
+                    </div>
+                    <div class="header__search hide">
+                        <input type="text" class="search__input" placeholder="¿Qué buscamos?">
+                        <a href="#" class="icon__search" data-search></a>
+                    </div>
+                    <div class="header__btn">
+                        <a href="./admin.html" class="header__login__link">
+                            <button class="header__loginBtn admin_btn"> Menú Administrador </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+        <!-- Menú inferior small -->
+    <div class="menu__flotante">
+            <div class="icono__menu" data-menu="float">
+                <img src="../assets/imagenes/logo_random.png" alt="trooper icon button">
+            </div>
+            <!-- Nocturno -->
+            <div class="toogle-btn none" data-btns>
+                <input type="checkbox" id="checkbox" class="toogleBtn">
+                <label for="checkbox" class="switch">
+                    <i class="fa-solid fa-moon"></i>
+                </label>
+            </div>
+            <!-- Buscar -->
+            <div class="search__btn none" data-btns>
+                <a class="search__link">
+                    <img src="../assets/imagenes/icono_busqueda.png" alt="trooper icon button" class="search__img">
+                </a>
+            </div>
+            <!-- Subir -->
+            <div class="icon__top-container">
+                <div class="to__top" data-menu="float">
+                    <a href="#" class="to-top-link">
+                        <i class="bi bi-chevron-double-up"></i>
+                    </a>
+                </div>
+            </div>
+    </div>
+
+<!-- all productos-->
+    <main>
+        <section class="productos">
+            <div class="contennedor">
+                <div class="productos__flia">
+                    <div class="productos__barra">
+                        <div class="productos__titulo">
+                            <h2 class="productos__titulo">Todos los productos</h2>
+                        </div>
+                    </div>
+
+                    <div class="productos__tarjetas" data-productos>
+                        <!-- DOM -->
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logolinks">
+                <div class="footer__logo">
+                    <a href="../index.html">
+                        <img src="../assets/imagenes/logo_random.png" alt="" class="header__logo">
+                    </a>
+                </div>
+                <!-- links -->
+                <nav class="footer__links">
+                    <ul>
+                        <li><a href="#"> Quienes somos </a></li>
+                        <li><a href="#"> Política de privacidad </a></li>
+                        <li><a href="#"> Programa de fidelidad </a></li>
+                        <li><a href="#"> Nuestras sucursales </a></li>
+                        <li><a href="#"> Quiero una franquicia </a></li>
+                        <li><a href="#"> Anuncie aquí </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Contacto -->
+            <form action="footer__contacto">
+                <h2> Contáctenos </h2>
+                <!-- Formulario -->
+                <div class="contacto__nombre">
+                    <label for="name" class="label__nombre"> Nombre </label>
+                    <input type="text" class="nombre" placeholder="Nombre Apellido" title="Solo letras y espacios" required>
+                </div>
+
+                <div class="contacto__nombre">
+                    <label for="name" class="label__nombre"> Correo </label>
+                    <input type="email" class="nombre" placeholder="ejemplo@correo.com" title="Este no e sun correo valido" required>
+                </div>
+
+                <textarea name="" id="" class="footer__textarea" cols="30" rows="10" placeholder="Escribe tu mensaje" required>
+                </textarea>
+                <input type="submit" class="submit">
+            </form>
+        </div>
+    </footer>
+
+    <!-- pie -->
+     <section class="rodapie">
+        <div class="rodapie__container">
+            <a class="rodapie__link" href="#" target="_blank" rel="nofollow nopenner no-referrer">
+                <i class="fa-brands fa-github-alt"></i>
+            </a>
+            <a class="rodapie__link" href="#" target="_blank"
+            rel="nofollow nopenner no-referrer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="rodapie__credito">
+            <p>©Croyimig</p>
+        </div>
+     </section>
+     <script src="../servicios/modules.js" type="module"></script>
+     <script src="./assets/controladores/allProducts.controllers.js" type="module"></script>
+</body>
+</html>
